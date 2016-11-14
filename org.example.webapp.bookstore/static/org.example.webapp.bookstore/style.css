@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', 'Noto', sans-serif;
+}
+
+app-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #4285f4;
+	color: #fff;
+}
+
+iron-icon.big {
+	padding: 0px 10px;
+	height: 32px;
+	width: 32px;
+}
