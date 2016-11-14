@@ -19,8 +19,11 @@ import org.example.cart.CartManager;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
+import com.effectiveosgi.annotation.WebComponent;
+
 import osgi.enroute.http.capabilities.RequireHttpImplementation;
 
+@WebComponent(name = "cart-list")
 @Component(
     property = {
       HTTP_WHITEBOARD_SERVLET_PATTERN + "=/cart-list/servlet/*",
