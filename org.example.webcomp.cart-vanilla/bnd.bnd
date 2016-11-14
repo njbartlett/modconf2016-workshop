@@ -1,0 +1,12 @@
+version: 1.0.0
+
+Bundle-Version: ${version}.${tstamp}
+
+-buildpath: \
+	osgi.enroute.base.api,\
+	com.effectiveosgi.annotation,\
+	org.example.apis; version=latest
+
+-includeresource: {static}
+
+Private-Package: org.example.webcomp.cart
