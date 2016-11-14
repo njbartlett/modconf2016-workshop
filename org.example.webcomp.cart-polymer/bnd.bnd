@@ -1,0 +1,13 @@
+version: 1.0.0
+
+Bundle-Version: ${version}
+
+-buildpath: \
+	osgi.enroute.base.api,\
+	com.effectiveosgi.annotation,\
+	osgi.enroute.polymer.iron.webresource,\
+	org.example.apis; version=latest
+
+-includeresource: {static}
+
+Private-Package: org.example.webcomp.cart

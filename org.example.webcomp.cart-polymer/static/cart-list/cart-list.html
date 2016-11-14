@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<link rel="import" href="/osgi.enroute.webresource/org.example.webapp.bookstore/1.0.0/iron-ajax/iron-ajax.html">
+<link rel="import" href="cart-item.html">
+
+<dom-module id="cart-list">
+	<template>
+		<style>
+			:host {
+				display: block;
+				width: 350px;
+				background-color: #ddddff;
+			}
+			cart-item {
+				margin-bottom: 10px;
+			}
+		</style>
+			
+		<iron-ajax auto verbose
+			url="/cart-list/servlet/"
+			last-response="{{items}}">
+		</iron-ajax>		
+		<div layout vertical center>
+			<h1>Items in Cart</h1>
+			<template is="dom-repeat" items='[[items]]'>
+				<cart-item item="[[item]]"></cart-item>
+			</template>
+		</div>
+	</template>
+</dom-module>
+
+<script type="text/javascript">
+Polymer({
+    is: "cart-list",
+});
+</script>

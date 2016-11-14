@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<link rel="import" href="/osgi.enroute.webresource/org.example.webapp.bookstore/1.0.0/polymer/polymer.html">
+
+<dom-module id="cart-item">
+	<template>
+		<style>
+			:host {
+  				display: flex;
+				//background-color: transparent;
+				width: 100%;	
+				align-items: center;
+			}
+			.description {
+				flex-grow: 1;
+			}
+			.price {
+				color: #dd4444;
+				font-size: 1.5em;
+			}
+		</style>
+		<span class="description">[[item.sku]]</span>
+		<span class="price">£<span>[[item.price]]</span></span>
+	</template>
+</dom-module>
+
+<script type="text/javascript">
+Polymer({
+    is: "cart-item",
+    properties: {
+        item: Object
+    }
+    /*
+    ,
+    handleBuyClicked: function () {
+        this.fire('iron-signal', { name: "item-added-to-cart", data: this.item });
+    }
+    */
+});
+</script>
