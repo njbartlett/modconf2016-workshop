@@ -19,9 +19,14 @@ import org.example.cart.CartManager;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
+import com.effectiveosgi.annotation.WebComponent;
+
 import osgi.enroute.http.capabilities.RequireHttpImplementation;
+import osgi.enroute.polymer.iron.webresource.capabilities.RequirePolymerIronWebresource;
 import osgi.enroute.webserver.capabilities.RequireWebServerExtender;
 
+@WebComponent(name = "polymer-cart-list")
+@RequirePolymerIronWebresource(resource = "*.html")
 @RequireWebServerExtender
 @Component(
     property = {
