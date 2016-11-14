@@ -11,7 +11,7 @@ import osgi.enroute.webserver.capabilities.RequireWebServerExtender;
 
 @RequirePolymerIronWebresource(resource = "*.html")
 @RequirePolymerAppWebresource(resource = "*.html")
-@RequireWebComponent(name = "cart-list")
+@RequireWebComponent(name = "polymer-cart-list")
 @RequireWebcomponentsJSWebresource(resource = "webcomponents-lite.min.js")
 @RequireBootstrapWebResource(resource="css/bootstrap.css")
 @RequireWebServerExtender
