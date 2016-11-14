@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1479104646000" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.effectiveosgi.annotation"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="81c1873234f197afe98adddc48e77ef1f91958b80046459532bdaa81d3c8858f"/>
+      <attribute name="url" value="com.effectiveosgi.annotation/com.effectiveosgi.annotation-0.0.0.jar"/>
+      <attribute name="size" type="Long" value="5455"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.effectiveosgi.annotation"/>
+      <attribute name="bundle-version" type="Version" value="0.0.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.effectiveosgi.annotation"/>
+      <attribute name="bundle-version" type="Version" value="0.0.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.effectiveosgi.annotation"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="com.effectiveosgi.annotation"/>
+      <attribute name="bundle-version" type="Version" value="0.0.0"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="osgi.enroute.polymer.app.webresource"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.201611140622"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="8bee974265b32c358d211c69a5029a85b47a59186384e3b1d24c67245ea3dd1c"/>
+      <attribute name="url" value="osgi.enroute.polymer.app.webresource/osgi.enroute.polymer.app.webresource-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="8712734"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="osgi.enroute.polymer.app.webresource"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201611140622"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="osgi.enroute.polymer.app.webresource"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201611140622"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="osgi.enroute.polymer.app.webresource.capabilities"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="osgi.enroute.polymer.app.webresource"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201611140622"/>
+    </capability>
+    <capability namespace="osgi.enroute.webresource">
+      <attribute name="osgi.enroute.webresource" value="/osgi/enroute/polymer/app/webresource"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="root" value="/static/osgi/enroute/polymer/app/webresource/1.0.0"/>
+    </capability>
+    <requirement namespace="osgi.enroute.webresource">
+      <attribute name="resource" type="List&lt;String&gt;" value="Iron.js"/>
+      <attribute name="priority" type="Long" value="0"/>
+      <directive name="filter" value="(&amp;(osgi.enroute.webresource=/osgi/enroute/polymer/iron/webresource)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="osgi.enroute.polymer.iron.webresource"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.201611140621"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="2133a716624c369a927912426f7c83aff79a534a6eb49e90cd9d5441be7b5df9"/>
+      <attribute name="url" value="osgi.enroute.polymer.iron.webresource/osgi.enroute.polymer.iron.webresource-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="1300245"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="osgi.enroute.polymer.iron.webresource"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201611140621"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="osgi.enroute.polymer.iron.webresource"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201611140621"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="osgi.enroute.polymer.iron.webresource.capabilities"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="osgi.enroute.polymer.iron.webresource"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201611140621"/>
+    </capability>
+    <capability namespace="osgi.enroute.webresource">
+      <attribute name="osgi.enroute.webresource" value="/osgi/enroute/polymer/iron/webresource"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="root" value="/static/osgi/enroute/polymer/iron/webresource/1.0.0"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="osgi.enroute.webcomponentsjs.webresource"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.7.2.201611140623"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="02513101488e9ca5fa90e4dc78f3249641d8062a64e30d6204bfaf6f837740e7"/>
+      <attribute name="url" value="osgi.enroute.webcomponentsjs.webresource/osgi.enroute.webcomponentsjs.webresource-0.7.2.jar"/>
+      <attribute name="size" type="Long" value="125075"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="osgi.enroute.webcomponentsjs.webresource"/>
+      <attribute name="bundle-version" type="Version" value="0.7.2.201611140623"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="osgi.enroute.webcomponentsjs.webresource"/>
+      <attribute name="bundle-version" type="Version" value="0.7.2.201611140623"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="osgi.enroute.webcomponentsjs.webresource.capabilities"/>
+      <attribute name="version" type="Version" value="0.7.2"/>
+      <attribute name="bundle-symbolic-name" value="osgi.enroute.webcomponentsjs.webresource"/>
+      <attribute name="bundle-version" type="Version" value="0.7.2.201611140623"/>
+    </capability>
+    <capability namespace="osgi.enroute.webresource">
+      <attribute name="osgi.enroute.webresource" value="/osgi/enroute/webcomponentsjs/webresource"/>
+      <attribute name="version" type="Version" value="0.7.2"/>
+      <attribute name="root" value="/static/osgi/enroute/webcomponentsjs/webresource/0.7.2"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+</repository>

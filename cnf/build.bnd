@@ -1,0 +1,5 @@
+#
+# This file is left open for you to define your macros
+#
+
+junit: osgi.enroute.junit.wrapper
